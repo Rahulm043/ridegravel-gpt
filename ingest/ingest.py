@@ -3,10 +3,10 @@ import glob
 from pathlib import Path
 from langchain.document_loaders import DirectoryLoader
 
-print(glob.glob("./reactjs.org/beta/src/content/**/*.md"))
+print(glob.glob("./granfondo-cycling.com/the-best-gravel-bike-review/**/*.md"))
 
 if __name__ == "__main__":
-    loader = DirectoryLoader("./reactjs.org/beta/src/content/", glob="**/*.md")
+    loader = DirectoryLoader("./granfondo-cycling.com/the-best-gravel-bike-review/", glob="**/*.md")
     raw_documents = loader.load()
     print(len(raw_documents))
     dir_path = Path("ingested_data")
