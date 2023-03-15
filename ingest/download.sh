@@ -3,7 +3,7 @@
 # Error if any command fails
 set -e
 echo Downloading docs...
-wget -q -r -A.html https://langchain.readthedocs.io/en/latest/
+wget -q -r -A.html https://granfondo-cycling.com/the-best-gravel-bike-review/
 SOURCE_PATH=$(dirname -- ${BASH_SOURCE[0]})
 echo Loading data...
 python3 "${SOURCE_PATH}/ingest.py"
