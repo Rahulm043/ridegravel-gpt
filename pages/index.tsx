@@ -24,7 +24,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: "Hi there! What do you want to know about React?",
+        message: "Hi there! What do you want to know about Gravel Bikes?",
         type: "apiMessage",
       },
     ],
